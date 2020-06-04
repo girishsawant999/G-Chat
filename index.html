@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G-Chat</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" class="css" />
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <script defer src="js/uihandler.js"></script>
+  </head>
+  <body>
+    <div class="card">
+      <div class="title">
+        <img id="profilePic" src="img/pic-1-m.png" alt="profile pic" />
+        <div class="userName">
+        </div>
+      </div>
+      <div class="chatContainer">
+      </div>
+      <div class="chatInput">
+        <input
+          type="text"
+          id="msgInp"
+          name="msg"
+          placeholder="Enter the message"
+          onkeydown="send"
+        ></input>
+        <button id="sendBtn" type="submit" class="btn">
+          Send
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
